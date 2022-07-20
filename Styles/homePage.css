@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Quicksand&display=swap');
+
+#navbar-1 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#navbar-1 > p {
+    margin: auto 0px;
+    padding: 8px 15px;
+    font-size: 0.875rem;
+    color: grey;
+    font-family: 'Josefin Sans', sans-serif;
+    border-left: 1px solid grey;
+}
+#navbar-1 > p:hover {
+    cursor: pointer;
+    color: #1e88e5;
+}
+#navbar-1 > div {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 6px 20px;
+    width: 1%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar-1 > div > img {
+    width: 100%;
+}
+#navbar-1 > div > img:hover {
+    border: 1px solid #1e88e5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#navbar-2 {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#navbar-2 > h1 {
+    padding: 0px 25px 10px;
+    margin: auto 0px;
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: -2px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    border-right: 1px solid grey;
+}
+#navbar-2 > p {
+    width: 8%;
+    padding: 22px 0px;
+    margin: auto 0px;
+    text-align: center;
+    color: white;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border-right: 1px solid grey;
+}
+#navbar-2 > p:hover {
+    cursor: pointer;
+    background-color: rgb(58, 58, 58);
+}
+#search {
+    width: 50%;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 50px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#search:hover {
+    border: 2px solid #1e88e5;
+}
+#navbar-2 > img {
+    width: 1.5%;
+    position: relative;
+    right: 40px;
+}
+#navbar-2 > img:hover, #navbar-2 > div > img:hover, #navbar-2 > h1:hover {
+    cursor: pointer;
+}
+#navbar-2 > div {
+    display: flex;
+    width: 12%;
+}
+#navbar-2 > div > img {
+    width: 30%;
+}
+#banner {
+    width: 100%;
+}
+#banner > img {
+    width: 100%;
+}
+#offer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20%;
+    background-color: rgb(156, 240, 224);
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700px;
+}
+#offer > p {
+    margin: auto 0px;
+    padding: 5px;
+    line-height: 16px;
+}
+.product-page {
+    border: 2px solid black;
+    width: 5%;
+}
