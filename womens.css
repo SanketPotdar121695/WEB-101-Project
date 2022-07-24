@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@900&family=Quicksand&display=swap');
+
+body {
+    margin: 0;
+}
+#navbar-1 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#navbar-1 > p {
+    margin: auto 0px;
+    padding: 8px 15px;
+    font-size: 0.875rem;
+    color: grey;
+    font-family: 'Josefin Sans', sans-serif;
+    border-left: 1px solid grey;
+}
+#navbar-1 > p:hover {
+    cursor: pointer;
+    color: #1e88e5;
+}
+#navbar-1 > div {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 6px 20px;
+    width: 1%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar-1 > div > img {
+    width: 100%;
+}
+#navbar-1 > div > img:hover {
+    border: 1px solid #1e88e5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#navbar-2 {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#navbar-2 > h1 {
+    padding: 0px 25px 10px;
+    margin: auto 0px;
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: -2px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    border-right: 1px solid grey;
+}
+#navbar-2 > p {
+    width: 8%;
+    padding: 22px 0px;
+    margin: auto 0px;
+    text-align: center;
+    color: white;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border-right: 1px solid grey;
+}
+#navbar-2 > p:hover {
+    cursor: pointer;
+    background-color: rgb(58, 58, 58);
+}
+#search {
+    width: 50%;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 50px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#search:hover {
+    border: 2px solid #1e88e5;
+}
+#navbar-2 > img {
+    width: 1.5%;
+    position: relative;
+    right: 40px;
+}
+#navbar-2 > img:hover, #navbar-2 > div > img:hover, #navbar-2 > h1:hover {
+    cursor: pointer;
+}
+#navbar-2 > div {
+    display: flex;
+    width: 12%;
+}
+#navbar-2 > div > img {
+    width: 30%;
+}
+#offer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20%;
+    background-color: rgb(247, 153, 186);
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    bottom: 1px;
+    z-index: 1;
+}
+#offer > p {
+    margin: auto 0px;
+    padding: 5px;
+    line-height: 16px;
+}
+.product-page {
+    border: 2px solid black;
+}
+#text {
+    text-align: center;
+    width: 67%;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 25px;
+}
+#text > p {
+    font-size: 15px;
+    color: #424242;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 15px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 85%;
+}
+#container > div > img {
+    width: 100%;
+}
+#container > div > div > p {
+    line-height: 20px;
+    height: 40px;
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#container > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#container > div > div > div > button {
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0;
+    font-size: 16px;
+    background-color: orangered;
+    color: azure;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#container > div > div > div > button:hover {
+    cursor: pointer;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-top: 0.1px solid grey;
+    height: 50px;
+}
+#logo > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#logo > div:nth-child(1) > img:hover {
+    border: 2px solid #1e88e5;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#logo > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 30%;
+    border-left: 1px solid grey;
+}
+#logo > div + div > img {
+    width: 8%;
+}
+#footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #eeeeee;
+    font-size: 14px;
+    padding: 20px;
+}
+#footer > div > h4, #footer > div > div > h4 {
+    color: #5a5a63;
+}
+#footer > div > p, #footer > div > div > p, #footer-last {
+    color: grey;
+}
+#footer > div > p:hover, #footer-last p:hover {
+    cursor: pointer;
+    color: #1e88e5;
+}
+#footer > div > div {
+    display: flex;
+    align-items: center;
+}
+#footer > div > div > h4:hover {
+    cursor: pointer;
+    color: #1e88e5;
+}
+#footer > div > div > div {
+    border-right: 3px solid grey;
+    padding: 1px 10px;
+    width: 7%;
+    margin-right: 5%;
+}
+#footer > div > div > div > img {
+    width: 100%;
+}
+#footer > div:last-child > h4 {
+    margin-bottom: 0;
+}
+#footer-last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    background-color: #e0e0e0;
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#footer-last > div {
+    display: flex;
+    align-items: center;
+}
+#footer-last > div > p {
+    padding: 0px 10px;
+}
+#footer-last > div > p:nth-child(1), #footer-last > div > p:nth-child(2) {
+    border-right: 1px solid grey;
+}
