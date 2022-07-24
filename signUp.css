@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@900&family=Quicksand&display=swap');
+body {
+    margin: 0;
+    background-image: url("https://wallpaperaccess.com/full/1567736.png");
+}
+#navbar-2 {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50vw;
+    background-color: black;
+}
+#navbar-2 > div > h1 {
+    padding: 0px 25px 10px;
+    margin: auto 0px;
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: -2px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    border-right: 1px solid grey;
+}
+#navbar-2 > div > p {
+    padding: 22px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    border-right: 1px solid grey;
+}
+#navbar-2 > div > p:hover {
+    cursor: pointer;
+    background-color: rgb(58, 58, 58);
+}
+#navbar-2 > div {
+    display: flex;
+    width: 12%;
+}
+#navbar-2 > div > img {
+    width: 30%;
+}
+#navbar-2 > img:hover, #navbar-2 > div > img:hover, #navbar-2 > div > h1:hover {
+    cursor: pointer;
+}
+#container {
+    margin: 70px auto;
+    width: 30vw;
+    padding: 20px 0px 10px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #eeeeee;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container > h1 {
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#container > h1:nth-child(2) {
+    margin-top: -15px;
+}
+#container > div > form > input {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 10px;
+    width: 60%;
+    background-color: #eeeeee;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#details > form > input:nth-child(1), #details > form > input:nth-child(2), #details > form > input:nth-child(3) {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#details > form > input:nth-child(4) {
+    border: 0;
+    background-color:#1e88e5;
+    border-radius: 50px;
+    color: white;
+    transition: 0.5s;
+    font-size: 25px;
+    margin-top: 50px;
+}
+#details > form > input:nth-child(4):hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: black;
+    font-weight: 600;
+}
+#details > div:nth-child(2) > p > a {
+    text-decoration: none;
+}
+#footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #eeeeee;
+    font-size: 14px;
+    padding: 20px;
+}
+#footer > div > h4, #footer > div > div > h4 {
+    color: #5a5a63;
+}
+#footer > div > p, #footer > div > div > p, #footer-last {
+    color: grey;
+}
+#footer > div > p:hover, #footer-last p:hover {
+    cursor: pointer;
+    color: #1e88e5;
+}
+#footer > div > div {
+    display: flex;
+    align-items: center;
+}
+#footer > div > div > h4:hover {
+    cursor: pointer;
+    color: #1e88e5;
+}
+#footer > div > div > div {
+    border-right: 3px solid grey;
+    padding: 1px 10px;
+    width: 7%;
+    margin-right: 5%;
+}
+#footer > div > div > div > img {
+    width: 100%;
+}
+#footer > div:last-child > h4 {
+    margin-bottom: 0;
+}
+#footer-last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    background-color: #e0e0e0;
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#footer-last > div {
+    display: flex;
+    align-items: center;
+}
+#footer-last > div > p {
+    padding: 0px 10px;
+}
+#footer-last > div > p:nth-child(1), #footer-last > div > p:nth-child(2) {
+    border-right: 1px solid grey;
+}
