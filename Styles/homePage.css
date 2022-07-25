@@ -132,6 +132,9 @@ body {
 .product-page {
     border: 2px solid black;
 }
+.product-page:hover {
+    cursor: pointer;
+}
 #banner-content {
     width: 100%;
     position: absolute;

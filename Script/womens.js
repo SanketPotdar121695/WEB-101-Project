@@ -200,7 +200,9 @@ let womens_data = [
         price: 449
     }
 ];
-let cart_data = JSON.parse(localStorage.getItem("cart-data")) || [];
+
+let login_data = JSON.parse(localStorage.getItem("login-data")) || "";
+let cart_data = JSON.parse(localStorage.getItem("womens-data")) || [];
 
 for (let i = 0; i < womens_data.length; i++){
     womens_data[i].id = "m" + (i + 1);
@@ -237,7 +239,80 @@ function display(womens_data){
 display(womens_data);
 
 function addToCart(product){
+    for (let i = 0; i < cart_data.length; i++){
+        if (cart_data[i].id === product.id){
+          alert("Product is already in the cart");
+          return;
+        }
+    }
     cart_data.push(product);
-    console.log(cart_data);
-    localStorage.setItem("cart-data", JSON.stringify(cart_data));
+    alert("Product added to the cart");
+    localStorage.setItem("womens-data", JSON.stringify(cart_data));
 }
+
+let product_page = document.querySelectorAll(".product-page");
+
+product_page.forEach(function (elem){
+    elem.addEventListener("click", function(){
+        if (login_data === ""){
+            alert("You are not logged in");
+            window.location.href = "login-page.html";
+            return;
+        }
+        else {
+            if (elem.innerText === "WOMEN"){
+                window.location.href = "womens-page.html";
+                return;
+            }
+            else {
+                window.location.href = "mens-page.html";
+                return;
+            }
+        }
+    });
+});
+
+let navbar_page = document.querySelectorAll(".navbar-page");
+navbar_page.forEach(function (elem){
+    elem.addEventListener("click", function(){
+        if (login_data === ""){
+            alert("You are not logged in");
+            window.location.href = "login-page.html";
+            return;
+        }
+        else {
+            if (elem.innerText === "WOMEN"){
+                window.location.href = "womens-page.html";
+                return;
+            }
+            else {
+                window.location.href = "mens-page.html";
+                return;
+            }
+        }
+    });
+});
+
+document.querySelector("#navbar-2 > h1").addEventListener("click", function(){
+    window.location.href = "home-page.html";
+});
+
+let signUp_icon = document.querySelector("#navbar-2 > div > img");
+
+signUp_icon.addEventListener("click", function (){
+    window.location.href = "signup-page.html";
+});
+
+let cart_icon = document.querySelectorAll(".navbar-icons");
+
+cart_icon.forEach(function(elem) {
+    elem.addEventListener("click", function(){
+        if (login_data === ""){
+            alert("You are not logged in");
+            window.location.href = "login-page.html";
+        }
+        else {
+            window.location.href = "cart-page.html";
+        }
+    });
+});

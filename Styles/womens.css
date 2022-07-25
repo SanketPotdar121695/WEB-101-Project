@@ -125,6 +125,9 @@ body {
 .product-page {
     border: 2px solid black;
 }
+.product-page:hover {
+    cursor: pointer;
+}
 #text {
     text-align: center;
     width: 67%;

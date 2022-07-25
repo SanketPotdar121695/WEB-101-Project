@@ -122,16 +122,18 @@ body {
     padding: 5px;
     line-height: 16px;
 }
-#text {
-    text-align: center;
-    width: 67%;
-    margin: auto;
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 25px;
+.product-page {
+    border: 2px solid black;
 }
-#text > p {
-    font-size: 15px;
-    color: #424242;
+.product-page:hover {
+    cursor: pointer;
+}
+#null-text {
+    text-align: center;
+    margin-top: -200px;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #container {
     display: grid;
@@ -166,6 +168,9 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
 }
+#container > div > div > div > button:hover {
+    cursor: pointer;
+}
 #logo {
     display: flex;
     justify-content: center;
@@ -173,6 +178,8 @@ body {
     gap: 50px;
     border-top: 0.1px solid grey;
     height: 50px;
+    position: relative;
+    top: 90vh;
 }
 #logo > div:nth-child(1) {
     display: flex;
@@ -203,6 +210,8 @@ body {
     background-color: #eeeeee;
     font-size: 14px;
     padding: 20px;
+    position: relative;
+    top: 90vh;
 }
 #footer > div > h4, #footer > div > div > h4 {
     color: #5a5a63;
@@ -242,6 +251,8 @@ body {
     background-color: #e0e0e0;
     font-size: 12px;
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 90vh;
 }
 #footer-last > div {
     display: flex;
@@ -252,4 +263,9 @@ body {
 }
 #footer-last > div > p:nth-child(1), #footer-last > div > p:nth-child(2) {
     border-right: 1px solid grey;
+}
+#total-price {
+    text-align: right;
+    margin-right: 15vw;
+    font-family: 'Josefin Sans', sans-serif;
 }
